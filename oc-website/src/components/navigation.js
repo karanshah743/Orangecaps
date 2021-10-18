@@ -11,7 +11,8 @@ import Feedback from "../pages/Feedback/feedback";
 import Events from "../pages/Events/event";
 import Contact from "../pages/ContactUs/contact";
 import Blogs from "../pages/Blogs/blog";
-import News from "../pages/News/news"
+import News from "../pages/News/news";
+
 
 
 
@@ -59,18 +60,19 @@ function Navigation() {
 
   return (
     <div>
-      <div>
+      <div className="navigation">
+
         <Box sx={{ width: '100%' }}>
 
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs className="box-model" value={value} onChange={handleChange} aria-label="basic tabs example">
-              <Tab label="Home" {...a11yProps(0)} />
-              <Tab label="Events" {...a11yProps(1)} />
-              <Tab label="Team" {...a11yProps(2)} />
-              <Tab label="Contact Us" {...a11yProps(3)} />
-              <Tab label="Blogs" {...a11yProps(4)} />
-              <Tab label="News" {...a11yProps(5)} />
-              <Tab label="Feedback" {...a11yProps(6)} />
+              <Tab className="navi-name" label="Home" {...a11yProps(0)} />
+              <Tab className="navi-name" label="Events" {...a11yProps(1)} />
+              <Tab className="navi-name" label="Team" {...a11yProps(2)} />
+              <Tab className="navi-name" label="Contact-Us" {...a11yProps(3)} />
+              <Tab className="navi-name" label="Blogs" {...a11yProps(4)} />
+              <Tab className="navi-name" label="News" {...a11yProps(5)} />
+              <Tab className="navi-name" label="Feedback" {...a11yProps(6)} />
             </Tabs>
           </Box>
 
@@ -104,6 +106,11 @@ function Navigation() {
 
         </Box>        
       </div>
+
+      {/* <div>
+        <img src={ Img } alt="" />
+        <p className="logo-name">ORANGE CAPS</p>
+      </div> */}
     </div>
   )
 }
