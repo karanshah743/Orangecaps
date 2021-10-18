@@ -25,7 +25,9 @@ function App() {
           <Route path="/blogs" component={ Blogs } exact/>
           <Route path="/news" component={ News } exact/>
         </Switch>
+
       </Router>
+      
     </div>
   );
 }
