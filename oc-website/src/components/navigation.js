@@ -12,6 +12,7 @@ import Events from "../pages/Events/event";
 import Contact from "../pages/ContactUs/contact";
 import Blogs from "../pages/Blogs/blog";
 import News from "../pages/News/news";
+// import Img from "../asserts/NavLogo.jpeg";
 
 
 
@@ -28,7 +29,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 2 }}>
+        <Box sx={{ p: 3 }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -61,50 +62,56 @@ function Navigation() {
   return (
     <div>
       <div className="navigation">
+        {/* <div>
+          <img className="NavLogo" src={ Img } alt="" />
+        </div> */}
+        <div>
+          <Box sx={{ width: '100%' }}>
 
-        <Box sx={{ width: '100%' }}>
+            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+              
+              <Tabs className="box-model" value={value} onChange={handleChange} aria-label="basic tabs example">
+                
+                <Tab className="navi-name" label="Home" {...a11yProps(0)} />
+                <Tab className="navi-name" label="Events" {...a11yProps(1)} />
+                <Tab className="navi-name" label="Team" {...a11yProps(2)} />
+                <Tab className="navi-name" label="Contact-Us" {...a11yProps(3)} />
+                <Tab className="navi-name" label="Blogs" {...a11yProps(4)} />
+                <Tab className="navi-name" label="News" {...a11yProps(5)} />
+                <Tab className="navi-name" label="Feedback" {...a11yProps(6)} />
+              </Tabs>
+            </Box>
 
-          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <Tabs className="box-model" value={value} onChange={handleChange} aria-label="basic tabs example">
-              <Tab className="navi-name" label="Home" {...a11yProps(0)} />
-              <Tab className="navi-name" label="Events" {...a11yProps(1)} />
-              <Tab className="navi-name" label="Team" {...a11yProps(2)} />
-              <Tab className="navi-name" label="Contact-Us" {...a11yProps(3)} />
-              <Tab className="navi-name" label="Blogs" {...a11yProps(4)} />
-              <Tab className="navi-name" label="News" {...a11yProps(5)} />
-              <Tab className="navi-name" label="Feedback" {...a11yProps(6)} />
-            </Tabs>
-          </Box>
+            <TabPanel value={value} index={0}>
 
-          <TabPanel value={value} index={0}>
+            </TabPanel>
 
-          </TabPanel>
+            <TabPanel value={value} index={1}>
+              <Events/>
+            </TabPanel>
 
-          <TabPanel value={value} index={1}>
-            <Events/>
-          </TabPanel>
+            <TabPanel value={value} index={2}>
+              <Team/>
+            </TabPanel>
 
-          <TabPanel value={value} index={2}>
-            <Team/>
-          </TabPanel>
+            <TabPanel value={value} index={3}>
+              <Contact/>
+            </TabPanel>
 
-          <TabPanel value={value} index={3}>
-            <Contact/>
-          </TabPanel>
+            <TabPanel value={value} index={4}>
+              <Blogs/>
+            </TabPanel>
 
-          <TabPanel value={value} index={4}>
-            <Blogs/>
-          </TabPanel>
+            <TabPanel value={value} index={5}>
+              <News/>
+            </TabPanel>
 
-          <TabPanel value={value} index={5}>
-            <News/>
-          </TabPanel>
+            <TabPanel value={value} index={5}>
+              <Feedback/>
+            </TabPanel>
 
-          <TabPanel value={value} index={5}>
-            <Feedback/>
-          </TabPanel>
-
-        </Box>        
+          </Box>        
+        </div>
       </div>
 
       {/* <div>
