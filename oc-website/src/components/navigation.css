@@ -30,5 +30,12 @@
 }
 
 .navigation {
+    /* display: flex; */
     background-color: var(--color-orange);
 }
+
+
+/* .NavLogo {
+    margin: 0 40%;
+    height: 55%;
+} */
