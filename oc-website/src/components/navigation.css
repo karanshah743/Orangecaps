@@ -1,4 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+:root {
+    --color-orange: rgb(255, 102, 0);
+    --color-white: #fff;
+}
+
 .box-model {
     margin: 0 20em;
     width: 60%;
 }
+
+.css-19kzrtu {
+    padding: 0 !important;
+}
+
+.navi-name {
+    font-family: 'Andada Pro', serif;
+    font-weight: 48px;
+    padding: 20px;
+    color: var(--color-white) !important;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+    background-color: var(--color-white) !important;
+}
+
+.css-1gsv261 {
+    padding: 16px;
+}
+
+.navigation {
+    /* display: flex; */
+    background-color: var(--color-orange);
+}
+
+
+/* .NavLogo {
+    margin: 0 40%;
+    height: 55%;
+} */
