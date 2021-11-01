@@ -1,0 +1,10 @@
+.my-masonry-grid_column2 {
+    padding-left: 15px; /* gutter size */
+    padding-right: 15px;
+    width: 23%;
+    background-clip: padding-box;
+  }
+
+  .cards:hover {
+      border-radius: 20px;
+  }
