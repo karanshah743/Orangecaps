@@ -5,37 +5,21 @@
     --color-white: #fff;
 }
 
-.box-model {
-    margin: 0 20em;
-    width: 60%;
-}
-
-.css-19kzrtu {
-    padding: 0 !important;
-}
-
-.navi-name {
-    font-family: 'Andada Pro', serif;
-    font-weight: 48px;
-    padding: 20px;
-    color: var(--color-white) !important;
-}
-
-.css-1aquho2-MuiTabs-indicator {
-    background-color: var(--color-white) !important;
-}
-
-.css-1gsv261 {
-    padding: 16px;
-}
-
 .navigation {
-    /* display: flex; */
     background-color: var(--color-orange);
 }
 
+.navMenu {
+    padding: 35px 0;
+}
 
-/* .NavLogo {
-    margin: 0 40%;
-    height: 55%;
-} */
+.is-active {
+    font-weight: bold;
+}
+
+.link {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 0 1.5%;
+    font-size: 20px;
+}

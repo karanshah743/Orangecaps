@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Home from "./pages/Home/home";
 import Team from "./pages/Team/team";
 import Feedback from "./pages/Feedback/feedback";
@@ -10,6 +10,7 @@ import Navigation from './components/navigation';
 import News from "./pages/News/news"
 
 function App() {
+
   return (
     <div className="App">
       <Router>
