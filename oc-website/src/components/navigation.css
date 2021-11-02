@@ -5,7 +5,8 @@
     --color-white: #fff;
 }
 
-.box-model {
+
+/* .box-model {
     margin: 0 20em;
     width: 60%;
 }
@@ -27,11 +28,31 @@
 
 .css-1gsv261 {
     padding: 16px;
-}
+} */
 
 .navigation {
     /* display: flex; */
     background-color: var(--color-orange);
+}
+
+.navMenu {
+    padding: 35px 0;
+}
+
+
+/* .css-1aquho2-MuiTabs-indicator {
+    height: 0 !important;
+} */
+
+.is-active {
+    font-weight: bold;
+}
+
+.link {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 0 1.5%;
+    font-size: 20px;
 }
 
 
