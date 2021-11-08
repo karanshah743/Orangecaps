@@ -1,0 +1,40 @@
+:root {
+    --color-greenshade: rgb(220, 240, 220, 0.2);
+    --color-blueshade: rgb(222, 235, 247, 0.2);
+}
+
+.container {
+    display: flex;
+    margin: 5% auto;
+    padding: 5% 3%;
+    align-items: center;
+}
+
+.course_tab {
+    flex: 0.5;
+    width: 100%;
+    background: var(--color-greenshade);
+    margin: 0 2%;
+    padding: 5% 0;
+    border-radius: 30px;
+}
+
+.service_tab {
+    flex: 0.5;
+    width: 100%;
+    background: var(--color-blueshade);
+    margin: 0 2%;
+    padding: 5% 0;
+    border-radius: 30px;
+}
+
+.serviceImg,
+.courseImg {
+    width: 65%;
+    margin-bottom: 5%;
+}
+
+.service_header,
+.course_header {
+    font-size: 36px;
+}

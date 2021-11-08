@@ -6,13 +6,6 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Home from '../pages/Home/home';
-import Team from "../pages/Team/team";
-import Feedback from "../pages/Feedback/feedback";
-import Events from "../pages/Events/event";
-import Contact from "../pages/ContactUs/contact";
-import Blogs from "../pages/Blogs/blog";
-import Features from "../pages/Features/features";
 function Navigation() {
 
   return (
