@@ -7,6 +7,7 @@ import Events from "./pages/Events/event";
 import Contact from "./pages/ContactUs/contact";
 import Blogs from "./pages/Blogs/blog";
 import Navigation from './components/navigation';
+import Footer from './components/mainfooteter';
 import News from "./pages/News/news"
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
           <Route path="/blogs" component={ Blogs } exact/>
           <Route path="/news" component={ News } exact/>
         </Switch>
+
+        <Footer/>
 
       </Router>
       
