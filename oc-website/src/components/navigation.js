@@ -12,7 +12,7 @@ import Feedback from "../pages/Feedback/feedback";
 import Events from "../pages/Events/event";
 import Contact from "../pages/ContactUs/contact";
 import Blogs from "../pages/Blogs/blog";
-import News from "../pages/News/news";
+import Features from "../pages/Features/features";
 function Navigation() {
 
   return (
@@ -20,11 +20,11 @@ function Navigation() {
       <div className="navigation">
         <div className="navMenu">
           <NavLink className="link" activeClassName="is-active" to="/" exact> Home </NavLink>
+          <NavLink className="link" activeClassName="is-active" to="/features"> Features </NavLink>
           <NavLink className="link" activeClassName="is-active" to="/events"> Events </NavLink>        
           <NavLink className="link" activeClassName="is-active" to="/team"> Team </NavLink>
           <NavLink className="link" activeClassName="is-active" to="/contact"> Contact </NavLink>
           <NavLink className="link" activeClassName="is-active" to="/blogs"> Blogs </NavLink>
-          <NavLink className="link" activeClassName="is-active" to="/news"> News </NavLink>
           <NavLink className="link" activeClassName="is-active" to="/feedback"> Feedback </NavLink>
         </div>
       </div>
