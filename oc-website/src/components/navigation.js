@@ -13,7 +13,7 @@ function Navigation() {
       <div className="navigation">
         <div className="navMenu">
           <NavLink className="link" activeClassName="is-active" to="/" exact> Home </NavLink>
-          <NavLink className="link" activeClassName="is-active" to="/features"> Features </NavLink>
+          <NavLink className="link" activeClassName="is-active" to="/benefits"> Benefits </NavLink>
           <NavLink className="link" activeClassName="is-active" to="/events"> Events </NavLink>        
           <NavLink className="link" activeClassName="is-active" to="/team"> Team </NavLink>
           <NavLink className="link" activeClassName="is-active" to="/contact"> Contact </NavLink>

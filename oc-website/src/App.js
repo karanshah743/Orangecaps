@@ -8,7 +8,7 @@ import Contact from "./pages/ContactUs/contact";
 import Blogs from "./pages/Blogs/blog";
 import Navigation from './components/navigation';
 import Footer from './components/mainfooteter';
-import Features from "./pages/Features/features"
+import Benefits from "./pages/Benefits/benefits"
 
 function App() {
 
@@ -25,7 +25,7 @@ function App() {
           <Route path="/events" component={ Events } exact/>
           <Route path="/contact" component={ Contact } exact/> 
           <Route path="/blogs" component={ Blogs } exact/>
-          <Route path="/features" component={ Features } exact/>
+          <Route path="/benefits" component={ Benefits } exact/>
         </Switch>
 
         <Footer/>
