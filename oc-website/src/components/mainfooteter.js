@@ -1,13 +1,20 @@
-import React from "react";
-import "./mainfooter.css";
+import React from "react"
+import Logo from '../asserts/Logo-footer.png'
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import TweetEmbed from 'react-tweet-embed'
+import "./mainfooter.css"
+import { IconButton } from "@mui/material";
 
 function Mainfooteter() {
   return (
     <div>
       <footer class="footer">
-        <div class="l-footer">
+        <div class="l-footer" style={{ marginLeft: '6%' }}>
           <h1>
-            <img src="https://i.postimg.cc/y62wcLBq/logo.png" alt="" />
+            <img src={ Logo } alt="" style={{ width: '150px' }} />
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
@@ -15,19 +22,33 @@ function Mainfooteter() {
             tempore iure sit nobis? Vitae nemo, optio maiores numquam quis
             recusandae.
           </p>
+          <div>
+            <IconButton class="sociallinks">
+              <InstagramIcon fontSize="large" />
+            </IconButton>
+            <IconButton class="sociallinks">
+              <LinkedInIcon fontSize="large" />
+            </IconButton>
+            <IconButton class="sociallinks">
+              <GitHubIcon fontSize="large" />
+            </IconButton>
+            <IconButton class="sociallinks">
+              <TwitterIcon fontSize="large" />
+            </IconButton>
+          </div>
         </div>
-        <ul class="r-footer">
+        <ul class="r-footer" style={{ marginLeft: '5%' }}>
           <li>
-            <h2>Quick Links</h2>
+            <h2 class="footer-heading">Quick Links</h2>
             <ul class="box">
               <li>
-                <a href="#">Contact</a>
+                <a href="/contact">Contact</a>
               </li>
               <li>
                 <a href="#">About</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a href="/blogs">Blog</a>
               </li>
               <li>
                 <a href="#">Login</a>
@@ -35,29 +56,18 @@ function Mainfooteter() {
             </ul>
           </li>
           <li class="features">
-            <h2>Write Us Personally</h2>
+            <h2 class="footer-heading">Write Us Personally</h2>
             <ul class="box h-box">
               <li>
-                <a href="#">CEO: Bhavya</a>
+                <a href="#">Founder: Bhavya Shah</a>
               </li>
               <li>
-                <a href="#">CEO: Bhavya</a>
-              </li>
-              <li>
-                <a href="#">CEO: Bhavya</a>
+                <a href="#">Co-Founder: Deep</a>
               </li>
             </ul>
           </li>
           <li>
-            <h2>Any queries</h2>
-            <ul class="box">
-              <li>
-                <input type="email" placeholder="Write your message" />
-              </li>
-              <li className="submit">
-                <button>Submit</button>
-              </li>
-            </ul>
+            <TweetEmbed id="1457709427902107654" />
           </li>
         </ul>
         <div class="b-footer">
