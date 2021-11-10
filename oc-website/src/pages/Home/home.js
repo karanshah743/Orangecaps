@@ -2,6 +2,7 @@ import React from 'react'
 import Img from "../../asserts/Logo.jpg"
 import "./home.css"
 import PNG from "../../asserts/OC-img.png"
+import {NavLink} from "react-router-dom"
 import CallMadeIcon from '@mui/icons-material/CallMade';
 // import BgVideo from "../..asserts/bgVideo.mp4"
 // import Navbar from '../../components/navbar'
@@ -59,7 +60,8 @@ function home() {
                 <div className="card__text">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur vel accusamus. Cumque, iste asperiores. Perferendis odio magnam nisi, eos provident nobis maxime nostrum nam, ipsum blanditiis quasi saepe aliquid!</p>
                 </div>
-                <a href="#" className='button'>Visit</a>
+                {/* <a href="#" className='button'>Visit</a> */}
+                <NavLink className="button" to="/courses"> Visit </NavLink>
               </section>
 
             </div>
