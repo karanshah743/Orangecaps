@@ -11,7 +11,16 @@ header p {
   flex-flow: row wrap;
   padding: 50px;
   color: #fff;
-  background-color: darkblue;
+  background-color: #29293e;
+}
+
+.footer-heading {
+  font-size: larger;
+  text-decoration: underline;
+  text-decoration-color: #ff6600;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+  font-weight: 500;
 }
 
 .footer > * {
@@ -53,6 +62,14 @@ h2 {
 
 .box a {
   color: #999;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.box a:hover {
+  color: #ff6600;
+  font-size: large;
+  font-weight: 400;
 }
 
 .h-box {
@@ -63,12 +80,30 @@ h2 {
 .b-footer {
   text-align: center;
   color: #999;
-  padding-top: 50px;
+  padding-top: 0px;
 }
 
 .l-footer p {
-  padding-right: 20%;
+  padding-right: 0%;
   color: #999;
+}
+
+.sociallinks {
+  display: inline-block;
+  height: 53px;
+  width: 53px !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.sociallinks:hover {
+  color: #24262b;
+  background-color: #ffffff;
 }
 
 input {
@@ -102,6 +137,7 @@ button {
   padding-top: 10px;
   padding-left: 40%;
 }
+
 @media screen and (min-width: 600px) {
   .r-footer > * {
     flex: 1;
