@@ -3,7 +3,7 @@ import "./courses.css"
 import Canva from "../../asserts/Canva.jpeg";
 import Crypto from "../../asserts/Crypto.jpeg";
 import Graphic from "../../asserts/Graphic.jpeg";
-import Acting from "../../asserts/acting.jpeg";
+import Acting from "../../asserts/actingg.jpeg";
 import Yoga from "../../asserts/yoga.jpeg";
 import Calligraphy from "../../asserts/calligraphy.jpeg"
 import Canvas from "../../asserts/canvas.jpeg"

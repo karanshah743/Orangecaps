@@ -28,7 +28,11 @@ img {
 .photography,
 .web_development,
 .graphic_designing,
-.digital_marketing {
+.digital_marketing,
+.Banner_making,
+.Carpet,
+.Mattress,
+.Sofa {
     text-align: left;
     border-left: 1px solid var(--color-black);
     border-top: 1px solid var(--color-black);
@@ -42,6 +46,10 @@ img {
 .photography:hover,
 .web_development:hover,
 .graphic_designing:hover,
-.digital_marketing:hover {
+.digital_marketing:hover,
+.Banner_making:hover,
+.Carpet:hover,
+.Mattress:hover,
+.Sofa:hover {
     box-shadow: 15px 15px 20px;
 }
