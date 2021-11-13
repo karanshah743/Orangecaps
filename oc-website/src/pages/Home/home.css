@@ -129,3 +129,12 @@ h2 {
     padding: 0 1.5%;
     font-size: 20px;
 }
+
+.course_service {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card_text_description {
+    font-size: 16px;
+}

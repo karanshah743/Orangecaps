@@ -7,6 +7,10 @@ import Graphic_design from "../../asserts/graphic_design.jpeg"
 import IT_consultancy from "../../asserts/IT_consultancy.jpeg"
 import Photography from "../../asserts/photography.jpeg"
 import Web_dev from "../../asserts/web_dev.jpeg"
+import Banner from "../../asserts/banner.jpeg"
+import Carpet from "../../asserts/carpet.jpeg"
+import Mattress from "../../asserts/Mattress.jpeg"
+import Sofa from "../../asserts/sofa.jpeg"
 
 function services() {
   return (
@@ -43,6 +47,22 @@ function services() {
           <div className="digital_marketing">
             <img src={Digital_market} alt="" />
             <p>Digital marketing</p>
+          </div>
+          <div className="Banner_making">
+            <img src={Banner} alt="" />
+            <p>Make your Banner</p>
+          </div>
+          <div className="Carpet">
+          <img src={Carpet} alt="" />
+            <p>Carpet Cleaning</p>
+          </div>
+          <div className="Mattress">
+          <img src={Mattress} alt="" />
+            <p>Mattress cleaning</p>
+          </div>
+          <div className="Sofa">
+          <img src={Sofa} alt="" />
+            <p>Sofa cleaning</p>
           </div>
 
         </div>
