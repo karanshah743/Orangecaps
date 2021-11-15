@@ -1,0 +1,87 @@
+.main-title {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: -100px;
+}
+
+.con1 {
+    background-color: #d5c5c8;
+    width: 90%;
+    margin: 150px 0 0 50px;
+    display: grid;
+    grid-template-columns: 400px auto;
+    border-radius: 10px;
+    padding: 80px 20px;
+    box-shadow: 6px 6px 10px 3px grey;
+}
+
+.img1 {
+    /* background-image: url(../src/image/discord.png); */
+    /* height: auto; */
+    padding: 0 200px;
+    border-radius: 20px;
+}
+
+.text1 p a {
+    padding: 200px;
+}
+
+.text1 a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.text1 p {
+    color: white;
+}
+
+.con2 {
+    background-color: #9da3a4;
+    width: 90%;
+    margin: 150px 0 0 50px;
+    display: grid;
+    grid-template-columns: auto 300px;
+    border-radius: 10px;
+    padding: 80px 20px;
+    box-shadow: 6px 6px 10px 3px grey;
+}
+
+.text2 h1 p {
+    padding: 60px;
+}
+
+.con3 {
+    background-color: #604d53;
+    width: 90%;
+    margin: 150px 0 0 50px;
+    border-radius: 10px;
+    grid-template-columns: auto 300px;
+    padding: 80px 20px;
+    box-shadow: 6px 6px 10px 3px grey;
+}
+
+.img3 {
+    display: flex;
+}
+
+.img31 {
+    padding: 0 20px;
+    border-radius: 30px;
+}
+
+.con4 {
+    background-color: #db7f8e;
+    width: 90%;
+    margin: 150px 0 0 50px;
+    display: grid;
+    grid-template-columns: 700px auto;
+    border-radius: 10px;
+    padding: 80px 0;
+    box-shadow: 6px 6px 10px 3px grey;
+}
+
+.img4 {
+    /* background-image: url(../src/image/piggy.jpg); */
+    width: 300px;
+}
