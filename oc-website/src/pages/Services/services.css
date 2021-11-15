@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+:root {
+    --color-black: #111;
+}
+
+.services {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    display: block;
+    padding-bottom: 50px;
+    margin: 50px 0;
+}
+
+.service_container {
+    margin: 30px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 200px;
+}
+
+.car_washing,
+.app_development,
+.IT_consultancy,
+.photography,
+.web_development,
+.graphic_designing,
+.digital_marketing,
+.Banner_making,
+.Carpet,
+.Mattress,
+.Sofa {
+    text-align: left;
+    border-left: 1px solid var(--color-black);
+    border-top: 1px solid var(--color-black);
+    box-shadow: 5px 5px 10px;
+    margin: 20px 20px;
+}
+
+.car_washing:hover,
+.app_development:hover,
+.IT_consultancy:hover,
+.photography:hover,
+.web_development:hover,
+.graphic_designing:hover,
+.digital_marketing:hover,
+.Banner_making:hover,
+.Carpet:hover,
+.Mattress:hover,
+.Sofa:hover {
+    box-shadow: 15px 15px 20px;
+}

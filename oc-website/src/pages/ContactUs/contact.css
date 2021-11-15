@@ -1,0 +1,99 @@
+.OC {
+    width: 100%;
+}
+
+.OCwrapper {
+    display: flex;
+    width: 80%;
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    margin: 5% auto;
+}
+
+.OCwrapper .OCleft {
+    width: 35%;
+    background: linear-gradient(to right, #ff5700, #fff);
+    padding: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.OCwrapper .OCleft img {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.OCwrapper .OCleft h4 {
+    margin-bottom: 10px;
+}
+
+.OCwrapper .OCleft p {
+    font-size: 12px;
+}
+
+.OCwrapper .OCright {
+    width: 65%;
+    bacOCground: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px 25px;
+}
+
+.OCwrapper .OCright .OCinfo h3,
+.OCwrapper .OCright .OCprojects h3 {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.OCdata {
+    margin: 4%;
+}
+
+.OCdata span {
+    margin: 0 5%;
+}
+
+.sociallinkss {
+    display: inline-block;
+    height: 53px;
+    width: 53px !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.socialIcon {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.sociallinkss:hover,
+.socialIcon:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+/* .css-kpm0tx-MuiButtonBase-root-MuiButton-root {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.css-kpm0tx-MuiButtonBase-root-MuiButton-root:hover {
+    color: #24262b;
+    background-color: #ffffff;
+} */
+
+
+/*.Info {
+    margin: 0 3%;
+} */

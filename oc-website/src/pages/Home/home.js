@@ -2,6 +2,7 @@ import React from 'react'
 import Img from "../../asserts/Logo.jpg"
 import "./home.css"
 import PNG from "../../asserts/OC-img.png"
+import {NavLink} from "react-router-dom"
 import CallMadeIcon from '@mui/icons-material/CallMade';
 // import BgVideo from "../..asserts/bgVideo.mp4"
 // import Navbar from '../../components/navbar'
@@ -55,11 +56,12 @@ function home() {
             <div className="bg">
 
               <section className="panel">
-                <h2>Our Courses</h2>
+                <h2 className="course_service">Our Courses</h2>
                 <div className="card__text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur vel accusamus. Cumque, iste asperiores. Perferendis odio magnam nisi, eos provident nobis maxime nostrum nam, ipsum blanditiis quasi saepe aliquid!</p>
+                  <p className='card_text_description'>Visit once and have habbit of learning. All courses are updated versions of current trends in industry</p>
                 </div>
-                <a href="#" className='button'>Visit</a>
+                {/* <a href="#" className='button'>Visit</a> */}
+                <NavLink className="button" to="/courses"> Visit </NavLink>
               </section>
 
             </div>
@@ -67,11 +69,12 @@ function home() {
             <div className="bg">
 
               <section className="panel">
-                <h2>Our Services</h2>
+                <h2 className="course_service">Our Services</h2>
                 <div className="card__text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur vel accusamus. Cumque, iste asperiores. Perferendis odio magnam nisi, eos provident nobis maxime nostrum nam, ipsum blanditiis quasi saepe aliquid!</p>
+                  <p className='card_text_description'>Give us chance to serve you and book our service with your suitable time</p>
                 </div>
-                <a href="#" className='button'>Visit</a>
+                {/* <a href="#" className='button'>Visit</a> */}
+                <NavLink className="button" to="/services"> Services </NavLink>
               </section>
 
             </div>
