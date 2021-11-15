@@ -78,7 +78,7 @@ function Feedback() {
 
     <Container style={{ display: 'flex', marginRight: 0, marginLeft: 0 }} style={{ maxWidth: '1400px'}}>
 
-      <TableContainer component={Paper} sx={{ mb: '3%'}} > 
+      <TableContainer component={Paper} sx={{ mb: '0'}} > 
         <Table>
           <TableHead>
             <TableRow>
