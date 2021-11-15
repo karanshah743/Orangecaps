@@ -4,3 +4,104 @@
     --color-darkorange: rgb(224, 109, 1);
     --color-lightorangeyellow: rgb(224, 192, 165);
 }
+
+#perks::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    left: 10%;
+    top: 13%;
+    background-color: #ff6600;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+}
+
+#perks::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    left: 90%;
+    top: 13%;
+    background-color: #ff6600;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+}
+
+#benefitsheading {
+    text-decoration: underline;
+    text-decoration-color: #ff6600;
+    text-underline-position: under;
+    text-decoration-thickness: 2px;
+}
+
+.MuiAccordion-root:nth-child(odd) {
+    background-color: #fd8a43;
+}
+
+.MuiAccordion-root:nth-child(even) {
+    background-color: bisque;
+}
+
+.MuiAccordion-root {
+    border-radius: 20px;
+}
+
+.Mui-expanded {
+    
+}
+
+#discordimage, #earnimage {
+    box-shadow: 0px 4px 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #gridlayout {
+        flex-direction: column;
+    }
+
+    #gridlayout2 {
+        flex-direction: column-reverse;
+    }
+
+    #content {
+        width: 180%;
+    }
+
+    #discordimage, #orangecapcardimage, #earnimage {
+        width: 300px !important;
+        margin: 0 5%;
+    }
+}
+
+#chip {
+    background-color: #fd8a43;
+    box-shadow: 0px 2px 2px;
+}
+
+#chip:hover {
+    background-color: white;
+    border: 2px solid #fd8a43;
+    color: #fd8a43;
+}
+
+@media screen and (max-width: 400px) {
+    
+    #titletext {
+        font-size: 10px;
+        margin: 45% 0;
+    }
+
+    #arrow {
+        margin: 180% 0;
+    }
+
+    #logo {
+        width: 150px;
+        margin-top: 25%;
+    }
+}

@@ -1,14 +1,310 @@
 import React from 'react'
 import "./benefits.css"
+import Logo from '../../asserts/Logo-footer.png'
+import Discord from '../../asserts/discord.png'
+import OrangeCapCard from '../../asserts/OrangeCapCard3.png'
+import EarnImage from '../../asserts/undraw_Savings.png'
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import Divider from '@mui/material/Divider';
+import Paper from '@mui/material/Paper';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+
+import ButtonBase from '@mui/material/ButtonBase';
 import CourseImg from "../../asserts/courses.jpg"
 import ServiceImg from "../../asserts/services.png"
+import { Card, Chip, Grid, Icon, Rating, Typography } from '@mui/material'
+import { height } from '@mui/system';
 
-function benefits() {
+function Benefits() {
+
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
   return (
     <div>
+      <Card id="perks" sx={{ backgroundColor: '#26292b', height: 200, margin: '2%' }}>
+        <div>
+          <Grid container spacing={2}> 
+            <Grid item xs={5}>
+              <Typography id="titletext" sx={{ color: '#ffffff', margin: '8% 0', letterSpacing: 2 }}>
+                <h1>Benefits</h1>
+                of joining with us
+              </Typography>
+            </Grid>
+            <Grid item xs={2}>
+              <ArrowRightAltIcon id="arrow" sx={{ color: '#ffffff', margin: '40% 0' }} fontSize="large" />
+            </Grid>
+            <Grid item xs={5}>
+              <img id="logo" src={ Logo } />
+            </Grid>
+          </Grid>
+        </div>
+      </Card>
+
       
+
+      <Paper sx={{ p: 2, margin: '2%', height: 'auto', flexGrow: 1 }} elevation={0}>
+        <Typography id="benefitsheading" fontSize={24} style={{ fontWeight: 'bold' }}>
+          JOIN THE SERVER
+        </Typography>
+        <br/><br/>
+        <Grid id="gridlayout" container spacing={2}>
+          <Grid item xs={6}>
+            <img src={ Discord }
+              id="discordimage"
+              alt="discord image"
+              style={{ width: '350px', borderRadius: 10 }}
+            />
+          </Grid>
+          <Grid item xs={6} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid id="content" item xs sx={{ textAlign: 'center', margin: '2% 20%'}}>
+                <Typography gutterBottom variant="subtitle1" component="div">
+                  Join our community server to get latest updates and information
+                  regarding webinars and courses.
+                  Be a part of the <b>Orange Caps</b> community where people can share
+                  ideas and communicate with each other regardless of any barrier.
+                </Typography>
+                <Chip id="chip" label="Discord Server" component="a" href="https://discord.gg/6WEq9AMQUr" target="_blank" clickable />
+                <Typography variant="body2" color="text.secondary">
+                  <a></a>
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Paper>
+
+      
+
+      <Paper sx={{ p: 2, margin: '2%', height: 'auto', flexGrow: 1 }} elevation={0}>
+        <Typography id="benefitsheading" fontSize={24} style={{ fontWeight: 'bold' }}>
+          BE A MEMBER
+        </Typography>
+        <br/><br/>
+        <Grid id="gridlayout2" container spacing={2}>
+          <Grid item xs={6} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid id="content" item xs sx={{ textAlign: 'center', margin: '2% 20%'}}>
+                <Typography gutterBottom variant="subtitle1" component="div" style={{ marginTop: '8%'}}>
+                  Orange Caps membership avails you with numerous benefits
+                  over wide range of courses and webinars.
+                  Be a member to get exclusive benefits in our community server as well.
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={6}>
+            <img src={ OrangeCapCard } 
+              id="orangecapcardimage"
+              style={{ width: '350px', borderRadius: 10 }}
+              alt="membership card"
+            />
+          </Grid>
+        </Grid>
+      </Paper>
+
+      
+
+      {/*<div style={{ margin: "2% 4%" }}>
+        <Typography id="benefitsheading" fontSize={24} style={{ fontWeight: 'bold', marginBottom: '2%' }}>
+          FUTURE EVENTS
+        </Typography>
+        <br/>
+        <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1bh-content"
+            id="panel1bh-header"
+          >
+            <Typography sx={{ width: '20%', flexShrink: 0, fontWeight: "bold" }}>
+              Title of project
+            </Typography>
+            <Typography sx={{ color: 'text.secondary', fontWeight: "bold", letterSpacing: 1, textAlign: "right" }}>
+              Date: 13/11/2021 |
+              Duration: 5 Weeks |
+              Price: 250/-
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails style={{ margin: '0 5%', textAlign: 'left' }}>
+            <Typography textAlign={'justify'}>
+              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
+              Aliquam eget maximus est, id dignissim quam.
+              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
+              Aliquam eget maximus est, id dignissim quam.
+            </Typography>
+            <Rating value={3} readOnly></Rating>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2bh-content"
+            id="panel2bh-header"
+          >
+            <Typography sx={{ width: '20%', flexShrink: 0, fontWeight: "bold" }}>Title of project</Typography>
+            <Typography sx={{ color: 'text.secondary', fontWeight: "bold", letterSpacing: 1, textAlign: "right" }}>
+              Date: 13/11/2021 |
+              Duration: 5 Weeks |
+              Price: 250/-
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails style={{ margin: '0 5%', textAlign: 'left' }} textAlign={'left'}>
+            <Typography textAlign={'justify'}>
+              Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus,
+              varius pulvinar diam eros in elit. Pellentesque convallis laoreet
+              laoreet.
+              Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus,
+              varius pulvinar diam eros in elit. Pellentesque convallis laoreet
+              laoreet.
+            </Typography>
+            <Rating value={3} readOnly></Rating>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel3bh-content"
+            id="panel3bh-header"
+          >
+            <Typography sx={{ width: '20%', flexShrink: 0, fontWeight: "bold" }}>
+              Title of project
+            </Typography>
+            <Typography sx={{ color: 'text.secondary', fontWeight: "bold", letterSpacing: 1, textAlign: "right" }}>
+              Date: 13/11/2021 |
+              Duration: 5 Weeks |
+              Price: 250/-
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails style={{ margin: '0 5%', textAlign: 'left' }}>
+            <Typography textAlign={'justify'}>
+              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
+              amet egestas eros, vitae egestas augue. Duis vel est augue.
+              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
+              amet egestas eros, vitae egestas augue. Duis vel est augue.
+            </Typography>
+            <Rating value={3} readOnly></Rating>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel4bh-content"
+            id="panel4bh-header"
+          >
+            <Typography sx={{ width: '20%', flexShrink: 0, fontWeight: "bold" }}>Title of project</Typography>
+            <Typography sx={{ color: 'text.secondary', fontWeight: "bold", letterSpacing: 1, textAlign: "right" }}>
+              Date: 13/11/2021 |
+              Duration: 5 Weeks |
+              Price: 250/-
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails style={{ margin: '0 5%', textAlign: 'left' }}>
+            <Typography textAlign={'justify'}>
+              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
+              amet egestas eros, vitae egestas augue. Duis vel est augue.
+              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
+              amet egestas eros, vitae egestas augue. Duis vel est augue.
+            </Typography>
+            <Rating value={3} readOnly></Rating>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel5bh-content"
+            id="panel5bh-header"
+          >
+            <Typography sx={{ width: '20%', flexShrink: 0, fontWeight: "bold" }}>Title of project</Typography>
+            <Typography sx={{ color: 'text.secondary', fontWeight: "bold", letterSpacing: 1, textAlign: "right" }}>
+              Date: 13/11/2021 |
+              Duration: 5 Weeks |
+              Price: 250/-
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails style={{ margin: '0 5%', textAlign: 'left' }}>
+            <Typography textAlign={'justify'}>
+              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
+              amet egestas eros, vitae egestas augue. Duis vel est augue.
+              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
+              amet egestas eros, vitae egestas augue. Duis vel est augue.
+            </Typography>
+            <Rating value={3} readOnly></Rating>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel6bh-content"
+            id="panel6bh-header"
+          >
+            <Typography sx={{ width: '20%', flexShrink: 0, fontWeight: "bold" }}>Title of project</Typography>
+            <Typography sx={{ color: 'text.secondary', fontWeight: "bold", letterSpacing: 1, textAlign: "right" }}>
+              Date: 13/11/2021 |
+              Duration: 5 Weeks |
+              Price: 250/-
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails style={{ margin: '0 5%', textAlign: 'left' }}>
+            <Typography textAlign={'justify'}>
+              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
+              amet egestas eros, vitae egestas augue. Duis vel est augue.
+              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
+              amet egestas eros, vitae egestas augue. Duis vel est augue.
+            </Typography>
+            <Rating value={3} readOnly></Rating>
+          </AccordionDetails>
+        </Accordion>
+      </div>*/}
+
+      
+
+      <Paper sx={{ p: 2, margin: '2%', height: 'auto', flexGrow: 1 }} elevation={0}>
+        <Typography id="benefitsheading" fontSize={24} style={{ fontWeight: 'bold' }}>
+          EARN BY YOURSELF
+        </Typography>
+        <br/><br/>
+        <Grid id="gridlayout" container spacing={2}>
+          <Grid item xs={6}>
+            <img src={ EarnImage }
+              id="earnimage"
+              alt="discord image"
+              style={{ width: '250px', borderRadius: 10 }}
+            />
+          </Grid>
+          <Grid item xs={6} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid id="content" item xs sx={{ textAlign: 'center', margin: '2% 20%'}}>
+                <Typography gutterBottom variant="subtitle1" component="div" style={{ marginTop: '10%'}}>
+                  Orange Caps provides a platform to earn by yourself.
+                  It depict the idea of communicating and sharing one's skill and knowlegde with others.
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Paper>
+
+      {/*<div>
+        <img src={ Discord } 
+          style={{ width: '30%' }}
+        />
+        <h1>Discord</h1>
+      </div>*/}
     </div>
   )
 }
 
-export default benefits
+export default Benefits
