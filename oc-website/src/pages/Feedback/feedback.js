@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import "./feedback.css"
+import axios from 'axios'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -74,11 +76,70 @@ function Feedback() {
     700: 1
   }
 
+  const [status, setStatus] = useState({
+    submitted: false,
+    submitting: false,
+    info: { error: false, msg: null }
+  })
+  const [inputs, setInputs] = useState({
+    //email: '',
+    //message: ''
+  })
+
+  const handleServerResponse = (ok, msg) => {
+    if (ok) {
+      setStatus({
+        submitted: true,
+        submitting: false,
+        info: { error: false, msg: msg }
+      })
+      setInputs({
+        email: '',
+        message: ''
+      })
+    } else {
+      setStatus({
+        info: { error: true, msg: msg }
+      })
+    }
+  }
+  const handleOnChange = e => {
+    e.persist()
+    setInputs(prev => ({
+      ...prev,
+      [e.target.id]: e.target.value
+    }))
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null }
+    })
+  }
+
+  const handleOnSubmit = e => {
+    e.preventDefault()
+    setStatus(prevStatus => ({ ...prevStatus, submitting: true }))
+    axios({
+      method: 'POST',
+      url: 'https://formspree.io/f/xayarbvy',
+      data: inputs
+    })
+      .then(response => {
+        handleServerResponse(
+          true,
+          'Thank you, your message has been submitted.'
+        )
+      })
+      .catch(error => {
+        handleServerResponse(false, error.response.data.error)
+      })
+  }
+
   return (
 
     <Container style={{ display: 'flex', marginRight: 0, marginLeft: 0 }} style={{ maxWidth: '1400px'}}>
 
-      <TableContainer component={Paper} sx={{ mb: '3%'}} > 
+      <TableContainer component={Paper} sx={{ mb: '0'}} > 
         <Table>
           <TableHead>
             <TableRow>
@@ -88,22 +149,30 @@ function Feedback() {
                     Feedback Form
                   </Typography>
                   <Divider />
-                  <form noValidate autoComplete="off" onSubmit={handleSubmit} sx={{ mx: 5, mt: 2 }}>
+                  <form noValidate autoComplete="off" onSubmit={handleOnSubmit} sx={{ mx: 5, mt: 2 }}>
                     <TextField
-                      onChange={(e) => setTitle(e.target.value)}
+                      id="name"
+                      //onChange={(e) => setTitle(e.target.value)}
+                      onChange={handleOnChange}
                       label="Name:"
                       sx={{ mt: 5, width: "90%" }}
                       required
+                      name="_name"
+                      value={inputs.name}
                     //error={titleError}
                     />
                     <br /><br />
                     <TextField
-                      onChange={(e) => setFeedback(e.target.value)}
+                      id="feedbackmsg"
+                      //onChange={(e) => setFeedback(e.target.value)}
+                      onChange={handleOnChange}
                       label="Feedback:"
+                      name="message"
                       multiline
                       rows={4}
                       sx={{ width: "90%" }}
                       required
+                      value={inputs.feedbackmsg}
                     //error={feedbackError}
                     />
                     <br /><br />
@@ -131,15 +200,24 @@ function Feedback() {
                     <Button
                       type="submit"
                       variant="contained"
+                      disabled={status.submitting}
                       sx={{ width: "90%" }}
                       endIcon={<SendIcon />}
                     >
-                      Submit
+                      {!status.submitting
+                        ? !status.submitted
+                          ? 'Submit'
+                          : 'Submitted'
+                        : 'Submitting...'}
                     </Button>
                   </form>
+                  {status.info.error && (
+                    <div className="error">Error: {status.info.msg}</div>
+                  )}
+                  {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
                 </div>
               </TableCell>
-              <TableCell>
+              <TableCell id="reviews">
                 <Masonry
                   breakpointCols={breakpoints}
                   className="my-masonry-grid"

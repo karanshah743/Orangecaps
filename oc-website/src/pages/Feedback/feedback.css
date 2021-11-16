@@ -1,0 +1,7 @@
+.MuiContainer-root {
+    padding: 0;
+}
+
+#reviews {
+    filter: blur(5px);
+}

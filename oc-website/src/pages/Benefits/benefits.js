@@ -5,18 +5,79 @@ import Discord from '../../asserts/discord.png'
 import OrangeCapCard from '../../asserts/OrangeCapCard3.png'
 import EarnImage from '../../asserts/undraw_Savings.png'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import DoneIcon from '@mui/icons-material/Done';
+import RemoveIcon from '@mui/icons-material/Remove';
 import Divider from '@mui/material/Divider';
 import Paper from '@mui/material/Paper';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import { styled } from '@mui/material/styles';
+import { tableCellClasses } from '@mui/material/TableCell';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
-
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
 import CourseImg from "../../asserts/courses.jpg"
 import ServiceImg from "../../asserts/services.png"
 import { Card, Chip, Grid, Icon, Rating, Typography } from '@mui/material'
 import { height } from '@mui/system';
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 800,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 2,
+};
+
+function createData(benefits, procard, premiumcard) {
+  return { benefits, procard, premiumcard };
+}
+
+const rows = [
+  createData('Discount on Courses and Services', <DoneIcon />, <DoneIcon />),
+  createData('Participation in Events', <DoneIcon />, <DoneIcon />),
+  createData('Generate Side Income', <DoneIcon />, <DoneIcon />),
+  createData('Volunteering in Events', <RemoveIcon />, <DoneIcon />),
+  createData('Promote your Product/Business on Discord Server', <RemoveIcon />, <DoneIcon />),
+  createData('Generate Your Own Podcasts ', <RemoveIcon />, <DoneIcon />),
+  createData('Free Subscription for our Webinars & Podcasts', <DoneIcon />, <DoneIcon />),
+  createData('Create Your Own Blog and get Published on our website', <RemoveIcon />, <DoneIcon />),
+];
+
+const StyledTableCell = styled(TableCell)(({ theme }) => ({
+  [`&.${tableCellClasses.head}`]: {
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+    fontSize: 18,
+  },
+  [`&.${tableCellClasses.body}`]: {
+    fontSize: 14,
+  },
+}));
+
+const StyledTableRow = styled(TableRow)(({ theme }) => ({
+  '&:nth-of-type(odd)': {
+    backgroundColor: theme.palette.action.hover,
+  },
+  // hide last border
+  '&:last-child td, &:last-child th': {
+    border: 0,
+  },
+}));
 
 function Benefits() {
 
@@ -25,6 +86,10 @@ function Benefits() {
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <div>
@@ -97,9 +162,41 @@ function Benefits() {
                   over wide range of courses and webinars.
                   Be a member to get exclusive benefits in our community server as well.
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  
-                </Typography>
+                <Chip id="chip" onClick={handleOpen} label="View Details" component="a" clickable />
+                <Modal
+                  open={open}
+                  onClose={handleClose}
+                  aria-labelledby="modal-modal-title"
+                  aria-describedby="modal-modal-description"
+                >
+                  <Box id="modalbox" sx={style}>
+                    <TableContainer component={Paper}>
+                      <Table sx={{ minWidth: 650 }} aria-label="a dense table">
+                        <TableHead>
+                          <TableRow>
+                            <StyledTableCell>Benefits</StyledTableCell>
+                            <StyledTableCell align="center">Pro Card</StyledTableCell>
+                            <StyledTableCell align="center">Premium Card</StyledTableCell>
+                          </TableRow>
+                        </TableHead>
+                        <TableBody>
+                          {rows.map((row) => (
+                            <StyledTableRow
+                              key={row.benefits}
+                              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                            >
+                              <TableCell component="th" scope="row">
+                                {row.benefits}
+                              </TableCell>
+                              <TableCell align="center">{row.procard}</TableCell>
+                              <TableCell align="center">{row.premiumcard}</TableCell>
+                            </StyledTableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </TableContainer>
+                  </Box>
+                </Modal>
               </Grid>
             </Grid>
           </Grid>
