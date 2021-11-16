@@ -104,4 +104,8 @@
         width: 150px;
         margin-top: 25%;
     }
+
+    #modalbox {
+        width: 200px;
+    }
 }

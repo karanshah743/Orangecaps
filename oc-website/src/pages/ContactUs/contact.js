@@ -27,7 +27,11 @@ function contact() {
               <div className="OCinfo_data">
                 <div className="OCdata">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias adipisci quis tempora dolorum odit laudantium placeat iure omnis! Beatae eveniet eius ullam autem rerum aspernatur, repudiandae repellendus eligendi quidem natus.
+                    We believe in building upon the Skills and 
+                    hence our tagline is Let’s communicate with your skills.
+                    We are a growing company in Education and Marketing Field. 
+                    We provide several courses on our website for those who want to learn. 
+                    Reach us anytime through below mentioned links and contacts.
                   </p>
                 </div>
               </div>

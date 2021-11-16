@@ -18,10 +18,10 @@ function Mainfooteter() {
             <img src={ Logo } alt="" style={{ width: '150px' }} />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-            atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque
-            tempore iure sit nobis? Vitae nemo, optio maiores numquam quis
-            recusandae.
+            We believe in building upon the Skills and 
+            hence our tagline is Let’s communicate with your skills.
+            We are a growing company in Education and Marketing Field. 
+            We provide several courses on our website for those who want to learn.
           </p>
           <div>
             <IconButton className="sociallinks">
