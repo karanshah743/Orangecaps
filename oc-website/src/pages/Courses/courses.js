@@ -8,12 +8,43 @@ import Yoga from "../../asserts/yoga.jpeg";
 import Calligraphy from "../../asserts/calligraphy.jpeg"
 import Canvas from "../../asserts/canvas.jpeg"
 import resinArt from "../../asserts/resinart.jpeg"
+import { Button } from '@mui/material'
 
 function courses() {
   return (
     <div>
       <div className="container">
         <div className="course_container">
+
+
+          
+        <div className='online_mode'>Offline Courses<br/><span>All kind of materials will be provided and hands-on-activity will be there and you are allowed to keep your customised product with yourself</span></div>
+          <div className="offline">
+          {/* <Button href="https://www.instagram.com/orangecaps__/" target="_blank"></Button> */}
+            <Button className="button-redirect" href="https://docs.google.com/forms/d/1dWDAQQ1PtP8w5vww2B2XdH9Gog55nBhwZ1p4canJEoY/edit" target="_blank">
+              <div className="resin_art">
+              <img src={resinArt} alt="" />
+              <p className='course_name'>Resin Art <br/>(Min. 2 people)</p>
+              <p>₹ 2500/-</p>
+            </div>
+            </Button>
+            <Button className="button-redirect" href="https://docs.google.com/forms/d/1ZcA7-jn_9eR4ahJo29kSO9WlD5vqSdCwBZ357llOr1Q/edit" target="_blank">              
+              <div className="canvas_paint">
+                <img src={Canvas} alt="" />
+                <p className='course_name'>Canvas Painting <br/>(Min. 2 people)</p>
+                <p>₹ 3000/-</p>
+              </div>
+            </Button>
+            <Button className="button-redirect" href="https://docs.google.com/forms/d/1p8Q4E-l372SAO28IW_ps6npTviz3zdwwFAeVTZUy-xA/edit" target="_blank">              
+              <div className="calligraphy">
+                <img src={Calligraphy} alt="" />
+                <p className='course_name'>calligraphy <br/>(Min. 2 people)</p>
+                <p>₹ 1500/-</p>
+              </div>
+            </Button>
+          </div>
+
+          <hr/>
 
           <div className='online_mode'>Online Courses</div>
           <div className="online">
@@ -46,26 +77,6 @@ function courses() {
 
           </div>
 
-          <hr/>
-
-          <div className='online_mode'>Offline Courses</div>
-          <div className="offline">
-            <div className="resin_art">
-              <img src={resinArt} alt="" />
-              <p className='course_name'>Resin Art <br/>(Min. 2 people)</p>
-              <p>₹ /-</p>
-            </div>
-            <div className="canvas_paint">
-              <img src={Canvas} alt="" />
-              <p className='course_name'>Canvas Painting <br/>(Min. 2 people)</p>
-              <p>₹ /-</p>
-            </div>
-            <div className="calligraphy">
-              <img src={Calligraphy} alt="" />
-              <p className='course_name'>calligraphy <br/>(Min. 2 people)</p>
-              <p>₹ /-</p>
-            </div>
-          </div>
 
         </div>
       </div>

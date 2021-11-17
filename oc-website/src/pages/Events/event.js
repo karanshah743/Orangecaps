@@ -1,5 +1,6 @@
 import React from 'react';
 import "./event.css";
+import { Chip } from '@mui/material'
 // import discord from "../src/image/discord.png";
 // import piggy from "../src/image/piggy.jpg";
 // import Navbar from '../../components/navbar'
@@ -8,9 +9,14 @@ import "./event.css";
 function event() {
   return (
     <div>
-      <h1 className="main-title">Scroll to browse you content.</h1>
+      <div id="temp">
+        <h1 id="comingsoon">COMING SOON</h1>
+        <h4>Stay tuned</h4>
+      </div>
+
+      {/* <h1 className="main-title">Scroll to browse you content.</h1>
       <div className="con1">
-        <div className="img1">{/* <img src={discord} /> */}</div>
+        <div className="img1"> <img src={discord} /></div>
         <div className="text1">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -22,26 +28,26 @@ function event() {
           </p>
           <a href="#">Link</a>
         </div>
-      </div>
+      </div> */}
 
-      <div className="con2">
+      {/* <div className="con2">
         <div className="text2">
           <h1>Free Wbinars</h1>
           <p>Click here to access multiple free webinar</p>
           <div className="img"></div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="con3">
+      {/* <div className="con3">
         <h1>Recent Events</h1>
         <div className="title"></div>
 
         <div className="img3">
-          <img className="img31" /*src={discord}*/ />
-          <img className="img31" /*src={discord}*/ />
-          <img className="img31" /*src={discord}*/ />
+          <img className="img31" src={discord} />
+          <img className="img31" src={discord} />
+          <img className="img31" src={discord} />
         </div>
-      </div>
+      </div> */}
 
       
     </div>

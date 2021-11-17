@@ -1,5 +1,14 @@
 import React from "react";
 import "./team.css";
+import Akshat from "../../asserts/Akshat.jpg"
+import Bhavya from "../../asserts/Bhavya.png"
+import Deep from "../../asserts/Deep.png"
+import Hely from "../../asserts/Hely.png"
+import Karan from "../../asserts/Karan.png"
+import Kinjal  from "../../asserts/Kinjal.png"
+import Mann from "../../asserts/Mann.png"
+import Vidhan from "../../asserts/Vidhan.png"
+import Yamini  from "../../asserts/Yamini.jpg"
 
 function team() {
   return (
@@ -45,7 +54,7 @@ function team() {
           <li>
             <a href="" className="card">
               <img
-                src="https://i.imgur.com/oYiTqum.jpg"
+                src={Bhavya}
                 className="card__image"
                 alt=""
               />
@@ -56,16 +65,15 @@ function team() {
                   </svg>
                   <img
                     className="card__thumb"
-                    src="https://i.imgur.com/7D7I6dI.png"
+                    src={Bhavya}
                     alt=""
                   />
                   <div className="card__header-text">
-                    <h3 className="card__title">Jessica Parker</h3>
+                    <h3 className="card__title">Bhavya</h3>
                   </div>
                 </div>
                 <p className="card__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, blanditiis?
+                  CEO/Founder
                 </p>
               </div>
             </a>
@@ -73,7 +81,7 @@ function team() {
           <li>
             <a href="" className="card">
               <img
-                src="https://i.imgur.com/2DhmtJ4.jpg"
+                src={Deep}
                 className="card__image"
                 alt=""
               />
@@ -84,7 +92,117 @@ function team() {
                   </svg>
                   <img
                     className="card__thumb"
-                    src="https://i.imgur.com/sjLMNDM.png"
+                    src={Deep}
+                    alt=""
+                  />
+                  <div className="card__header-text">
+                    <h3 className="card__title">Deep Shah</h3>
+                  </div>
+                </div>
+                <p className="card__description">
+                  Co-Founder
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="" className="card">
+              <img
+                src={Mann}
+                className="card__image"
+                alt=""
+              />
+              <div className="card__overlay">
+                <div className="card__header">
+                  <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
+                    <path />
+                  </svg>
+                  <img
+                    className="card__thumb"
+                    src={Mann}
+                    alt=""
+                  />
+                  <div className="card__header-text">
+                    <h3 className="card__title">Mann Shah</h3>
+                  </div>
+                </div>
+                <p className="card__description">
+                  Technical head
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="" className="card">
+              <img
+                src={Kinjal}
+                className="card__image"
+                alt=""
+              />
+              <div className="card__overlay">
+                <div className="card__header">
+                  <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
+                    <path />
+                  </svg>
+                  <img
+                    className="card__thumb"
+                    src={Kinjal}
+                    alt=""
+                  />
+                  <div className="card__header-text">
+                    <h3 className="card__title">Kinjal</h3>
+                  </div>
+                </div>
+                <p className="card__description">
+                  Web Developer
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="" className="card">
+              <img
+                src={Karan}
+                className="card__image"
+                alt=""
+              />
+              <div className="card__overlay">
+                <div className="card__header">
+                  <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
+                    <path />
+                  </svg>
+                  <img
+                    className="card__thumb"
+                    src={Karan}
+                    alt=""
+                  />
+                  <div className="card__header-text">
+                    <h3 className="card__title">Karan Shah</h3>
+                  </div>
+                </div>
+                <p className="card__description">
+                  Web Developer
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="" className="card">
+              <img
+                src={Hely}
+                className="card__image"
+                alt=""
+              />
+              <div className="card__overlay">
+                <div className="card__header">
+                  <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
+                    <path />
+                  </svg>
+                  <img
+                    className="card__thumb"
+                    src={Hely}
                     alt=""
                   />
                   <div className="card__header-text">
@@ -92,16 +210,16 @@ function team() {
                   </div>
                 </div>
                 <p className="card__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, blanditiis?
+                  COMPANY ADVISOR AND DIGITAL MARKETING HEAD
                 </p>
               </div>
             </a>
           </li>
+
           <li>
             <a href="" className="card">
               <img
-                src="https://i.imgur.com/oYiTqum.jpg"
+                src={Yamini}
                 className="card__image"
                 alt=""
               />
@@ -112,24 +230,24 @@ function team() {
                   </svg>
                   <img
                     className="card__thumb"
-                    src="https://i.imgur.com/7D7I6dI.png"
+                    src={Yamini}
                     alt=""
                   />
                   <div className="card__header-text">
-                    <h3 className="card__title">Jessica Parker</h3>
+                    <h3 className="card__title">Yamini</h3>
                   </div>
                 </div>
                 <p className="card__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, blanditiis?
+                  Content-writer
                 </p>
               </div>
             </a>
           </li>
+
           <li>
             <a href="" className="card">
               <img
-                src="https://i.imgur.com/2DhmtJ4.jpg"
+                src={Akshat}
                 className="card__image"
                 alt=""
               />
@@ -140,7 +258,34 @@ function team() {
                   </svg>
                   <img
                     className="card__thumb"
-                    src="https://i.imgur.com/sjLMNDM.png"
+                    src={Akshat}
+                    alt=""
+                  />
+                  <div className="card__header-text">
+                    <h3 className="card__title">Akshat Shah</h3>
+                  </div>
+                </div>
+                <p className="card__description">
+                  Event Manager
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="" className="card">
+              <img
+                src={Vidhan}
+                className="card__image"
+                alt=""
+              />
+              <div className="card__overlay">
+                <div className="card__header">
+                  <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
+                    <path />
+                  </svg>
+                  <img
+                    className="card__thumb"
+                    src={Vidhan}
                     alt=""
                   />
                   <div className="card__header-text">
@@ -148,8 +293,7 @@ function team() {
                   </div>
                 </div>
                 <p className="card__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, blanditiis?
+                  Community manager
                 </p>
               </div>
             </a>
