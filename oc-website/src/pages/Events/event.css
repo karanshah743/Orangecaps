@@ -1,3 +1,20 @@
+#temp {
+    margin: 20% auto;
+    width: 50%;
+}
+
+#comingsoon {
+    letter-spacing: 30px;
+    font-weight: 20;
+}
+
+h4 {
+    font-weight: 50;
+    font-size: 26px;
+    border-bottom: 1px solid #111;
+    letter-spacing: 10px;
+}
+
 .main-title {
     margin-top: 30px;
     padding-top: 20px;

@@ -3,11 +3,11 @@ import Logo from '../asserts/Logo-footer.png'
 import { NavLink, Link } from "react-router-dom";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TweetEmbed from 'react-tweet-embed'
 import "./mainfooter.css"
 import { IconButton } from "@mui/material";
+import { Button } from '@mui/material'
 
 function Mainfooteter() {
   return (
@@ -25,16 +25,13 @@ function Mainfooteter() {
           </p>
           <div>
             <IconButton className="sociallinks">
-              <InstagramIcon fontSize="large" />
+              <Button size="large" href="https://www.instagram.com/orangecaps__/" target="_blank"><InstagramIcon className="socialReach" fontSize="large" /></Button>
+            </IconButton> 
+            <IconButton className="sociallinks">
+            <Button size="large" href="https://www.linkedin.com/company/80660153/admin/" target="_blank"><LinkedInIcon className="socialReach" fontSize="large" /></Button>
             </IconButton>
             <IconButton className="sociallinks">
-              <LinkedInIcon fontSize="large" />
-            </IconButton>
-            <IconButton className="sociallinks">
-              <TwitterIcon fontSize="large" />
-            </IconButton>
-            <IconButton className="sociallinks">
-              <GitHubIcon fontSize="large" />
+            <Button size="large" href="https://twitter.com/OrangeCaps__" target="_blank"><TwitterIcon className="socialReach" fontSize="large" /></Button>
             </IconButton>
           </div>
         </div>

@@ -47,10 +47,10 @@ function contact() {
                     <Button size="large" href="https://www.instagram.com/orangecaps__/" target="_blank"><InstagramIcon className="socialIcon" fontSize="large" /></Button>
                   </IconButton>
                   <IconButton className="sociallinkss">
-                    <LinkedInIcon fontSize="large" />
+                    <Button size="large" href="https://www.linkedin.com/company/80660153/admin/" target="_blank"><LinkedInIcon className="socialIcon" fontSize="large" /></Button>
                   </IconButton>
                   <IconButton className="sociallinkss">
-                    <TwitterIcon fontSize="large" />
+                    <Button size="large" href="https://twitter.com/OrangeCaps__" target="_blank"><TwitterIcon className="socialIcon" fontSize="large" /></Button>
                   </IconButton>
                   </div>
                 </div>
