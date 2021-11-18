@@ -50,29 +50,30 @@
     border-radius: 20px;
 }
 
-.Mui-expanded {
-    
-}
+.Mui-expanded {}
 
-#discordimage, #earnimage {
+#discordimage,
+#earnimage {
     box-shadow: 0px 4px 10px;
 }
 
-@media screen and (max-width: 600px) {
+.tableBody {
+    overflow-y: scroll !important;
+}
 
+@media screen and (max-width: 600px) {
     #gridlayout {
         flex-direction: column;
     }
-
     #gridlayout2 {
         flex-direction: column-reverse;
     }
-
     #content {
         width: 180%;
     }
-
-    #discordimage, #orangecapcardimage, #earnimage {
+    #discordimage,
+    #orangecapcardimage,
+    #earnimage {
         width: 300px !important;
         margin: 0 5%;
     }
@@ -90,21 +91,17 @@
 }
 
 @media screen and (max-width: 400px) {
-    
     #titletext {
         font-size: 10px;
         margin: 45% 0;
     }
-
     #arrow {
         margin: 180% 0;
     }
-
     #logo {
         width: 150px;
         margin-top: 25%;
     }
-
     #modalbox {
         width: 200px;
     }
