@@ -121,7 +121,7 @@ function Feedback() {
     setStatus(prevStatus => ({ ...prevStatus, submitting: true }))
     axios({
       method: 'POST',
-      url: 'https://formspree.io/f/xayarbvy',
+      url: 'https://formspree.io/f/xqkwrnpg',
       data: inputs
     })
       .then(response => {
