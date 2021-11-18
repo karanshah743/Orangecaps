@@ -28,10 +28,10 @@ function Mainfooteter() {
               <Button size="large" href="https://www.instagram.com/orangecaps__/" target="_blank"><InstagramIcon className="socialReach" fontSize="large" /></Button>
             </IconButton> 
             <IconButton className="sociallinks">
-            <Button size="large" href="https://www.linkedin.com/company/80660153/admin/" target="_blank"><LinkedInIcon className="socialReach" fontSize="large" /></Button>
+              <Button size="large" href="https://www.linkedin.com/company/80660153/admin/" target="_blank"><LinkedInIcon className="socialReach" fontSize="large" /></Button>
             </IconButton>
             <IconButton className="sociallinks">
-            <Button size="large" href="https://twitter.com/OrangeCaps__" target="_blank"><TwitterIcon className="socialReach" fontSize="large" /></Button>
+              <Button size="large" href="https://twitter.com/OrangeCaps__" target="_blank"><TwitterIcon className="socialReach" fontSize="large" /></Button>
             </IconButton>
           </div>
         </div>

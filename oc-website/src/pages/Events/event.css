@@ -1,18 +1,32 @@
+#main {
+    
+}
+
 #temp {
-    margin: 20% auto;
-    width: 50%;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient( rgb(255, 102, 0) , rgb(41, 41, 62));
 }
 
 #comingsoon {
     letter-spacing: 30px;
-    font-weight: 20;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 10%;
+}
+
+hr {
+    width: 35%;
+    margin: 2% auto !important;
+    border: 1px solid;
 }
 
 h4 {
-    font-weight: 50;
+    font-weight: 500;
     font-size: 26px;
-    border-bottom: 1px solid #111;
     letter-spacing: 10px;
+    margin: 0;
 }
 
 .main-title {
@@ -22,25 +36,29 @@ h4 {
 }
 
 .con1 {
-    background-color: #d5c5c8;
+    background-color: #9d394b;
     width: 90%;
-    margin: 150px 0 0 50px;
+    margin: 52px;
     display: grid;
     grid-template-columns: 400px auto;
     border-radius: 10px;
-    padding: 80px 20px;
+    padding: 40px 20px;
     box-shadow: 6px 6px 10px 3px grey;
 }
 
 .img1 {
     /* background-image: url(../src/image/discord.png); */
     /* height: auto; */
-    padding: 0 200px;
+    padding: 0;
     border-radius: 20px;
 }
 
+.img1:hover {
+    transform: scale(1);
+}
+
 .text1 p a {
-    padding: 200px;
+    padding: 0;
 }
 
 .text1 a {
@@ -51,6 +69,13 @@ h4 {
 
 .text1 p {
     color: white;
+    font-size: 20px;
+    margin: 0 8%;
+}
+
+#chip {
+    background-color: #fd8a43;
+    font-size: small;
 }
 
 .con2 {
