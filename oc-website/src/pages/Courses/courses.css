@@ -58,7 +58,8 @@ img {
 .yoga,
 .resin_art,
 .canvas_paint,
-.calligraphy {
+.calligraphy,
+.cooking {
     text-align: left;
     border-left: 1px solid var(--color-black);
     border-top: 1px solid var(--color-black);
@@ -73,7 +74,8 @@ img {
 .yoga:hover,
 .resin_art:hover,
 .canvas_paint:hover,
-.calligraphy:hover {
+.calligraphy:hover,
+.cooking:hover {
     box-shadow: 15px 15px 20px;
 }
 
