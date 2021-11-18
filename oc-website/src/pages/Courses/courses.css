@@ -23,10 +23,11 @@
     width: 100%;
 }
 
-.online {
+
+/* .online {
     opacity: 0.2;
     filter: blur(25px);
-}
+} */
 
 .online,
 .offline {

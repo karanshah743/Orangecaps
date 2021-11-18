@@ -79,7 +79,6 @@ function home() {
 
             </div>
           </div>
-          <div className="button">Register</div>
         </div>
           
       </div>

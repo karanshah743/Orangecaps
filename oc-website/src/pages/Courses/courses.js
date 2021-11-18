@@ -49,7 +49,7 @@ function courses() {
           <div className='online_mode'>Online Courses</div>
           <div className="online">
 
-            <div className="crypto">
+            {/* <div className="crypto">
               <img src={Crypto} alt="" />
               <p className='course_name'>Crypto</p>
               <p>₹ /-</p>
@@ -68,12 +68,14 @@ function courses() {
               <img src={Yoga} alt="" />
               <p className='course_name'>Yoga</p>
               <p>₹ /-</p>
-            </div>
-            <div className="acting">
-              <img src={Acting} alt="" />
-              <p className='course_name'>Acting</p>
-              <p>₹ /-</p>
-            </div>
+            </div> */}
+            <Button className="button-redirect" href="https://docs.google.com/forms/d/1foJJSxNiu_w6oFwwE-iwCnZ8K8OrgNImCtchwcIPneA/edit" target="_blank">              
+              <div className="acting">
+                <img src={Acting} alt="" />
+                <p className='course_name'>Acting</p>
+                <p>₹ 550/-</p>
+              </div>
+            </Button>
 
           </div>
 

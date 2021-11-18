@@ -20,9 +20,8 @@ function blog() {
 
   return (
     <div>
-      <Typography variant="h5" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '600'}} mt="20px">Blogs</Typography>
       <br/>
-      <Typography variant="span" style={{ textTransform: 'uppercase', letterSpacing: '2px'}} mt="20px">Be attentive in the world at the ease of your fingertips</Typography>
+      <p className="BLOGS"><Typography variant="span" style={{ textTransform: 'uppercase', letterSpacing: '2px'}} mt="20px">Be attentive in the world at the ease of your fingertips</Typography></p>
       <br/><br/>
 
       <div style={{ marginTop: '0px', marginBottom: '20px' }}>
