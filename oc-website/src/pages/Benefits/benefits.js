@@ -164,6 +164,8 @@ function Benefits() {
                   Be a member to get exclusive benefits in our community server as well.
                 </Typography>
                 <Chip id="chip" onClick={handleOpen} label="View Details" component="a" clickable />
+                {'   '}
+                <Chip id="chip"  label="Register" component="a" clickable />
                 <Modal
                   open={open}
                   onClose={handleClose}
