@@ -7,6 +7,7 @@ import Acting from "../../asserts/actingg.jpeg";
 import Yoga from "../../asserts/yoga.jpeg";
 import Calligraphy from "../../asserts/calligraphy.jpeg"
 import Canvas from "../../asserts/canvas.jpeg"
+import Cooking from "../../asserts/cooking.jpg"
 import resinArt from "../../asserts/resinart.jpeg"
 import { Button } from '@mui/material'
 
@@ -39,6 +40,13 @@ function courses() {
               <div className="calligraphy">
                 <img src={Calligraphy} alt="" />
                 <p className='course_name'>calligraphy <br/>(Min. 2 people)</p>
+                <p>₹ 1500/-</p>
+              </div>
+            </Button>
+            <Button className="button-redirect" href="https://docs.google.com/forms/d/1kffX83g9NnWHSqPi7V86g6c-RGtEvPGlVmRpNZl19MA/edit" target="_blank">
+              <div className="cooking">
+                <img src={Cooking} alt="" />
+                <p className='course_name'>Cooking <br/> (30+ dishes)<br/>(Min. 2 people)</p>
                 <p>₹ 1500/-</p>
               </div>
             </Button>
@@ -78,8 +86,6 @@ function courses() {
             </Button>
 
           </div>
-
-
         </div>
       </div>
     </div>
