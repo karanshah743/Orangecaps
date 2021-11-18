@@ -54,6 +54,9 @@ const rows = [
   createData('Volunteering in Events', <RemoveIcon />, <DoneIcon />),
   createData('Promote your Product/Business on Discord Server', <RemoveIcon />, <DoneIcon />),
   createData('Generate Your Own Podcasts ', <RemoveIcon />, <DoneIcon />),
+  createData('Pendrive Included', <RemoveIcon />, <DoneIcon />),
+  createData('Can launch your services', <RemoveIcon />, <DoneIcon />),
+  createData('Can launch your courses', <RemoveIcon />, <DoneIcon />),
   createData('Free Subscription for our Webinars & Podcasts', <DoneIcon />, <DoneIcon />),
   createData('Create Your Own Blog and get Published on our website', <RemoveIcon />, <DoneIcon />),
 ];
@@ -165,7 +168,7 @@ function Benefits() {
                 </Typography>
                 <Chip id="chip" onClick={handleOpen} label="View Details" component="a" clickable />
                 {'   '}
-                <Chip id="chip"  label="Register" component="a" clickable />
+                <Chip id="chip"  label="Register" href="https://docs.google.com/forms/u/1/d/1ugx2UuavSQXcpDKyDlqWSQXIQfVvIufC4Lk37hJcx8E/edit" component="a" clickable />
                 <Modal
                   open={open}
                   onClose={handleClose}
