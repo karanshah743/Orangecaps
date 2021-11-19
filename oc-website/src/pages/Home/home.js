@@ -27,7 +27,16 @@ function home() {
               Boost your confidence and seperate yourself from crowd of thousands.
             </p> */}
             <div className="description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum fugit aperiam est veritatis ad dolores recusandae tenetur? Numquam pariatur animi similique, at nostrum ut magni! Sapiente nesciunt minima qui officiis rem sequi corporis doloribus. Iusto earum placeat nulla debitis voluptatum, neque molestias obcaecati libero similique animi voluptas fuga soluta! Quasi!
+              The color orange depicts CREATIVITY C-CAPABILITY ,
+              A-ABILITY , P-PASSIVE INCOME , S-SKILLS. We are a growing company
+              in Education and Marketing Field. We provide several courses on our website. Once they complete the course we’ll give them live
+              projects through which we’ll get to know how much they’ve learned. After the
+              completion of the course, we’ll provide them certificates of completion of the
+              course.We also have several services like car washing,
+              photography and many more people can book for at an affordable rates. Not only this, 
+              several events like cooking competitions, Squid games, DJ party, etc. are in queue. In
+              future, we’re planning to collaborate with more companies through which our
+              customers can avail maximum benefits.
             </div>
           </div>
 
