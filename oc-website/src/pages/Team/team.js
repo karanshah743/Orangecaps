@@ -289,7 +289,7 @@ function team() {
                     alt=""
                   />
                   <div className="card__header-text">
-                    <h3 className="card__title">kim Cattrall</h3>
+                    <h3 className="card__title">Vidhan Pancholi</h3>
                   </div>
                 </div>
                 <p className="card__description">
