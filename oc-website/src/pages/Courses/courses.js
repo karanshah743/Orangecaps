@@ -19,7 +19,7 @@ function courses() {
 
 
           
-        <div className='online_mode'>Offline Courses<br/><span>All kind of materials will be provided and hands-on-activity will be there and you are allowed to keep your customised product with yourself</span></div>
+        <div className='online_mode'>Offline Courses</div>
           <div className="offline">
           {/* <Button href="https://www.instagram.com/orangecaps__/" target="_blank"></Button> */}
             <Button className="button-redirect" href="https://docs.google.com/forms/d/1dWDAQQ1PtP8w5vww2B2XdH9Gog55nBhwZ1p4canJEoY/edit" target="_blank">
