@@ -11,6 +11,11 @@
     margin: 50px 0;
 }
 
+.button-redirect {
+    width: 300px !important;
+    color: #111 !important;
+}
+
 .service_container {
     margin: 30px auto;
     width: 90%;
