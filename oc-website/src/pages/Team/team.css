@@ -70,6 +70,7 @@
     background-color: var(--surface-color);
     transform: translateY(100%);
     transition: 0.2s ease-in-out;
+    background-color: rgb(230, 231, 238);
 }
 
 .card:hover .card__overlay {

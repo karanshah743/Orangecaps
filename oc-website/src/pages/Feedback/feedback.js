@@ -163,10 +163,23 @@ function Feedback() {
                     />
                     <br /><br />
                     <TextField
-                      id="feedbackmsg"
+                      id="querymsg"
                       //onChange={(e) => setFeedback(e.target.value)}
                       onChange={handleOnChange}
                       label="Feedback:"
+                      name="message"
+                      multiline
+                      rows={4}
+                      sx={{ width: "90%" }}
+                      required
+                      value={inputs.feedbackmsg}
+                    //error={feedbackError}
+                    />
+                    <TextField
+                      id="feedbackmsg"
+                      //onChange={(e) => setFeedback(e.target.value)}
+                      onChange={handleOnChange}
+                      label="Query:"
                       name="message"
                       multiline
                       rows={4}

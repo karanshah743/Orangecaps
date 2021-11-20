@@ -20,7 +20,7 @@ function services() {
 
         <div className='services'>Our services at your door step</div>
         <div className="service_container">
-          <Button className="button-redirect">                
+          <Button className="button-redirect" href="https://docs.google.com/forms/d/19y61eyWFImyMnM-H1nTk4sG9AbdAH4hZTzkedrIq0AQ/edit" target="_blank">                
             <div className="car_washing">
               <img src={Car_wash} alt="" />
               <p>Car washing</p>
