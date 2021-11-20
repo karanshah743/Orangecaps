@@ -2,7 +2,7 @@ import React from 'react'
 import "./benefits.css"
 import Logo from '../../asserts/Logo-footer.png'
 import Discord from '../../asserts/discord.png'
-import OrangeCapCard from '../../asserts/OrangeCapCard3.png'
+import OrangeCapsCard from '../../asserts/OC-card.jpg'
 import EarnImage from '../../asserts/undraw_Savings.png'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -204,7 +204,7 @@ function Benefits() {
             </Grid>
           </Grid>
           <Grid item xs={6}>
-            <img src={ OrangeCapCard } 
+            <img src={ OrangeCapsCard } 
               id="orangecapcardimage"
               style={{ width: '350px', borderRadius: 10 }}
               alt="membership card"

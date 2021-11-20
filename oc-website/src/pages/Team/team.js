@@ -1,14 +1,14 @@
 import React from "react";
 import "./team.css";
-import Akshat from "../../asserts/Akshat.jpg"
-import Bhavya from "../../asserts/Bhavya.png"
-import Deep from "../../asserts/Deep.png"
-import Hely from "../../asserts/Hely.png"
-import Karan from "../../asserts/Karan.png"
-import Kinjal  from "../../asserts/Kinjal.png"
+import Akshat from "../../asserts/Akshat.jpeg"
+import Bhavya from "../../asserts/Bhavya.jpeg"
+import Deep from "../../asserts/Deep.jpeg"
+import Hely from "../../asserts/Hely.jpeg"
+import Karan from "../../asserts/Karan.jpeg"
+import Kinjal  from "../../asserts/Kinjal.jpeg"
 import Mann from "../../asserts/Mann.png"
-import Vidhan from "../../asserts/Vidhan.png"
-import Yamini  from "../../asserts/Yamini.jpg"
+import Vidhan from "../../asserts/Vidhan.jpeg"
+import Yamini  from "../../asserts/Yamini.jpeg"
 
 function team() {
   return (
