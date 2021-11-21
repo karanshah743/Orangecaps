@@ -48,14 +48,13 @@ function createData(benefits, procard, premiumcard) {
 }
 
 const rows = [
-  createData('Discount on Courses and Services', <DoneIcon />, <DoneIcon />),
-  createData('Generate Side Income', <DoneIcon />, <DoneIcon />),
-  createData('Volunteering in Events', <RemoveIcon />, <DoneIcon />),
-  createData('Promote your Product/Business on Discord Server', <RemoveIcon />, <DoneIcon />),
-  createData('Generate Your Own Podcasts ', <RemoveIcon />, <DoneIcon />),
-  createData('Pendrive Included', <RemoveIcon />, <DoneIcon />),
-  createData('Can launch your services and courses', <RemoveIcon />, <DoneIcon />),
-  createData('Create Your Own Blog and get Published on our website', <RemoveIcon />, <DoneIcon />),
+  createData('Discount on Courses and Services',
+  createData('Generate Side Income',
+  createData('Volunteering in Events',
+  createData('Promote your Product/Business on Discord Server',
+  createData('Generate Your Own Podcasts ',
+  createData('Can launch your services and courses',
+  createData('Create Your Own Blog and get Published on our website',
 ];
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
