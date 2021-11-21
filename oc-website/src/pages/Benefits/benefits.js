@@ -2,7 +2,8 @@ import React from 'react'
 import "./benefits.css"
 import Logo from '../../asserts/Logo-footer.png'
 import Discord from '../../asserts/discord.png'
-import OrangeCapsCard from '../../asserts/OC-card.jpg'
+import OrangeCapsCard from '../../asserts/oc-front.svg'
+import OrangeCapsCard2 from '../../asserts/oc-back.svg'
 import EarnImage from '../../asserts/undraw_Savings.png'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -43,18 +44,18 @@ const style = {
   p: 2,
 };
 
-function createData(benefits, procard, premiumcard) {
-  return { benefits, procard, premiumcard };
+function createData(benefits) {
+  return { benefits};
 }
 
 const rows = [
-  createData('Discount on Courses and Services',
-  createData('Generate Side Income',
-  createData('Volunteering in Events',
-  createData('Promote your Product/Business on Discord Server',
-  createData('Generate Your Own Podcasts ',
-  createData('Can launch your services and courses',
-  createData('Create Your Own Blog and get Published on our website',
+  createData('Discount on Courses and Services'),
+  createData('Generate Side Income'),
+  createData('Volunteering in Events'),
+  createData('Promote your Product/Business on Discord Server'),
+  createData('Generate Your Own Podcasts'),
+  createData('Can launch your services and courses'),
+  createData('Create Your Own Blog and get Published on our website'),
 ];
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -177,8 +178,7 @@ function Benefits() {
                         <TableHead>
                           <TableRow>
                             <StyledTableCell>Benefits</StyledTableCell>
-                            <StyledTableCell align="center">Pro Card</StyledTableCell>
-                            <StyledTableCell align="center">Premium Card</StyledTableCell>
+                            
                           </TableRow>
                         </TableHead>
                         <TableBody className='tableBody'>
@@ -190,8 +190,7 @@ function Benefits() {
                               <TableCell component="th" scope="row">
                                 {row.benefits}
                               </TableCell>
-                              <TableCell align="center">{row.procard}</TableCell>
-                              <TableCell align="center">{row.premiumcard}</TableCell>
+                              
                             </StyledTableRow>
                           ))}
                         </TableBody>
@@ -203,11 +202,20 @@ function Benefits() {
             </Grid>
           </Grid>
           <Grid item xs={6}>
-            <img src={ OrangeCapsCard } 
-              id="orangecapcardimage"
-              style={{ width: '350px', borderRadius: 10 }}
-              alt="membership card"
-            />
+            <div className="member-front">
+              <img src={ OrangeCapsCard } 
+                id="orangecapcardimage1"
+                style={{ width: '350px', borderRadius: 10 }}
+                alt="membership card"
+              />
+            </div>
+            <div className="member-back">
+              <img src={ OrangeCapsCard2 }
+                id="orangecapcardimage2"
+                style={{ width: '350px', borderRadius: 10 }}
+                alt="membership card"
+              />
+            </div>
           </Grid>
         </Grid>
       </Paper>
