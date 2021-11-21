@@ -72,12 +72,29 @@
         width: 180%;
     }
     #discordimage,
-    #orangecapcardimage,
     #earnimage {
-        width: 300px !important;
+        width: 100% !important;
         margin: 0 5%;
     }
 }
+
+.member {
+    display: flex;
+    /* width: 100%; */
+}
+
+.gridMember {
+    max-width: 100% !important;
+}
+
+.member1 {
+    margin-right: 10px;
+}
+
+
+/* #orangecapcardimage1:hover {
+    transform: rotateY(360deg);
+} */
 
 #chip {
     background-color: #fd8a43;
