@@ -4,6 +4,8 @@ import Logo from '../../asserts/Logo-footer.png'
 import Discord from '../../asserts/discord.png'
 import OrangeCapsCard from '../../asserts/oc-front.svg'
 import OrangeCapsCard2 from '../../asserts/oc-back.svg'
+import OrangeCapsCardb from '../../asserts/oc-front-b.svg'
+import OrangeCapsCard2p from '../../asserts/oc-back-p.svg'
 import EarnImage from '../../asserts/undraw_Savings.png'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -201,20 +203,32 @@ function Benefits() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={6}>
-            <div className="member-front">
-              <img src={ OrangeCapsCard } 
-                id="orangecapcardimage1"
-                style={{ width: '350px', borderRadius: 10 }}
-                alt="membership card"
-              />
-            </div>
-            <div className="member-back">
-              <img src={ OrangeCapsCard2 }
-                id="orangecapcardimage2"
-                style={{ width: '350px', borderRadius: 10 }}
-                alt="membership card"
-              />
+          <Grid item xs={6} className="gridMember">
+            <div className="member">
+              <div className="member1">
+                <img src={ OrangeCapsCard } 
+                  // id="orangecapcardimage1"
+                  style={{ width: '350px', borderRadius: 10 }}
+                  alt="membership card"
+                />
+                <img src={ OrangeCapsCardb }
+                  // id="orangecapcardimage2"
+                  style={{ width: '350px', borderRadius: 10 }}
+                  alt="membership card"
+                />
+              </div>
+              <div className="member2">
+                <img src={ OrangeCapsCard2 } 
+                  // id="orangecapcardimage1"
+                  style={{ width: '350px', borderRadius: 10 }}
+                  alt="membership card"
+                />
+                <img src={ OrangeCapsCard2p }
+                  // id="orangecapcardimage2"
+                  style={{ width: '350px', borderRadius: 10 }}
+                  alt="membership card"
+                />
+              </div>
             </div>
           </Grid>
         </Grid>
