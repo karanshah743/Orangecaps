@@ -119,7 +119,25 @@
         width: 150px;
         margin-top: 25%;
     }
+
+    #discordimage, #earnimage {
+        width: 250px !important;
+        margin: 0 25%;
+    }
+
     #modalbox {
         width: 200px;
+    }
+
+    .member1 {
+        margin-left: 0;
+    }
+
+    .member1 img {
+        width: 150px !important;
+    }
+
+    .member2 img {
+        width: 150px !important;
     }
 }

@@ -82,6 +82,34 @@
     background-color: #ffffff;
 }
 
+@media screen and (max-width: 400px) {
+
+    .OC {
+        width: 100% !important;
+    }
+    
+    .OCwrapper {
+        flex-direction: column;
+        margin: 10% auto;
+    }
+
+    .OCwrapper .OCleft {
+        width: 80%;
+        background: linear-gradient(to right, #ff5700, #ff5700);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+
+    .OCwrapper .OCright {
+        width: 80%;
+    }
+
+    .OCwrapper .OCleft img {
+        width: 225px;
+    }
+}
+
 
 /* .css-kpm0tx-MuiButtonBase-root-MuiButton-root {
     background-color: rgba(255, 255, 255, 0.2);

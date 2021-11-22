@@ -13,7 +13,7 @@ function home() {
     <div>
       <div className="Title">
 
-        <img src={ Img } alt="" />
+        <img id="logoimage" src={ Img } alt="" />
         <p className="logo-name">ORANGE CAPS</p>
 
         <div className="container">

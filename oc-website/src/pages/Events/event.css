@@ -127,3 +127,22 @@ h4 {
     /* background-image: url(../src/image/piggy.jpg); */
     width: 300px;
 }
+
+@media screen and (max-width: 400px) {
+
+    #comingsoon {
+        font-size: 24px;
+        margin-left: 5%;
+        padding-top: 15%;
+        margin-bottom: 8%;
+    }
+
+    hr {
+        width: 60%;
+    }
+
+    h4 {
+        font-size: 20px;
+        margin-top: 8%;
+    }
+}

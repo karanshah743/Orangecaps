@@ -207,24 +207,24 @@ function Benefits() {
             <div className="member">
               <div className="member1">
                 <img src={ OrangeCapsCard } 
-                  // id="orangecapcardimage1"
+                  id="orangecapcardimage1"
                   style={{ width: '350px', borderRadius: 10 }}
                   alt="membership card"
                 />
                 <img src={ OrangeCapsCardb }
-                  // id="orangecapcardimage2"
+                  id="orangecapcardimage2"
                   style={{ width: '350px', borderRadius: 10 }}
                   alt="membership card"
                 />
               </div>
               <div className="member2">
                 <img src={ OrangeCapsCard2 } 
-                  // id="orangecapcardimage1"
+                  id="orangecapcardimage1"
                   style={{ width: '350px', borderRadius: 10 }}
                   alt="membership card"
                 />
                 <img src={ OrangeCapsCard2p }
-                  // id="orangecapcardimage2"
+                  id="orangecapcardimage2"
                   style={{ width: '350px', borderRadius: 10 }}
                   alt="membership card"
                 />

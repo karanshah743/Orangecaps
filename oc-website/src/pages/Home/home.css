@@ -138,3 +138,28 @@ h2 {
 .card_text_description {
     font-size: 16px;
 }
+
+@media screen and (max-width: 400px) {
+    .logo-name {
+        font-size: 35px;
+    }
+
+    .container, .interaction {
+        flex-direction: column;
+    }
+
+    .description {
+        margin: 0 auto;
+        width: 80%;
+        text-align: justify;
+    }
+
+    .OC-Img .OC {
+        width: 65% !important;
+        margin-top: 10%;
+    }
+
+    #logoimage {
+        margin-top: 10%;
+    }
+}
